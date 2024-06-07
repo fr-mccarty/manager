@@ -19,6 +19,8 @@ return [
     'navigation_menu' => [
         ['label' => 'Dashboard', 'route' => 'dashboard'],
 
+        ['label' => 'Apps', 'route' => 'apps.index'],
+
         // Insert Above
     ],
 ];

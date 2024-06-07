@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\Landing;
+use App\Models\App;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', Landing::class);
+
+$apps = App::get();
+
+foreach($apps as $app) {
+    Route::get('/' . $app->url, \App\Livewire\Detail::class);
+}
 
 Route::middleware([
     'auth:sanctum',
