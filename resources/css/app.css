@@ -10,3 +10,41 @@
 [x-cloak] {
     display: none;
 }
+
+.markdown p {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    line-height: 1.75rem; /* Equivalent to leading-relaxed */
+    color: #2d3748; /* Equivalent to text-gray-800 */
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+}
+
+.markdown p:last-of-type {
+    margin-top: 1rem; /* Equivalent to mt-4 */
+}
+
+.markdown pre {
+    background-color: #f7fafc; /* Equivalent to bg-gray-100 */
+    padding: 1rem; /* Equivalent to p-4 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    overflow: auto; /* Equivalent to overflow-auto */
+    color: #2d3748; /* Equivalent to text-gray-800 */
+}
+
+.markdown pre code {
+    white-space: pre-line; /* Equivalent to whitespace-pre-line */
+}
+
+.markdown pre code .font-semibold {
+    font-weight: 600; /* Equivalent to font-semibold */
+}
+
+.markdown p:first-of-type {
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+}
+
+.markdown p:nth-of-type(2) {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #1a202c; /* Equivalent to text-gray-900 */
+    margin-bottom: 0.5rem; /* Equivalent to mb-2 */
+}

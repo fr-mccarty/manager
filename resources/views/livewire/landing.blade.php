@@ -18,6 +18,8 @@
     </div>
 
     <x-page>
+
+
         @foreach($apps as $index => $app)
             <div class="{{ $index % 2 != 0 ? 'flex-row-reverse' : '' }} gap-[5em] md:flex justify-between px-[4em] py-[4em]  items-center">
                 <div>
@@ -31,7 +33,11 @@
                         More Information
                     </x-link.black-button>
                 </div>
-                <i class="fas fa-{{$app->font_awesome}} text-[6em] py-12"></i>
+                @if($app->custom_logo)
+                    <img alt="Logo" class="w-[7em]" src="{{$app->custom_logo}}" />
+                @else
+                    <i class="fas fa-{{$app->font_awesome}} text-[6em] py-12"></i>
+                @endif
             </div>
         @endforeach
     </x-page>

@@ -13,15 +13,14 @@
     </div>
 
     <x-page>
-        <div class="gap-[5em] px-[4em] py-[4em] ">
-            <div>
-                {{$app->content}}
-
-            </div>
-            <div>
-                <x-link.black-button class="mt-7" target="_blank" href="{{$app->public_url}}">
-                    Go To app
-                </x-link.black-button>
+        <div class="gap-[5em] px-[4em] py-10 ">
+            <x-link.black-button class="" target="_blank" href="{{$app->public_url}}">
+                Go To app
+            </x-link.black-button>
+            <div class="bg-white py-6 px-6 mt-8">
+                <div class="markdown">
+                    {!! Str::markdown($app->content)  !!}
+                </div>
             </div>
         </div>
     </x-page>
