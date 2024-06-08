@@ -18,15 +18,10 @@ use Illuminate\Support\Facades\Schema;
 
 Route::get('/', Landing::class);
 
-//if (Schema::hasTable('apps')) {
-//    $apps = App::get();
-//
-//    if($apps) {
-//        foreach($apps as $app) {
-//            Route::get('/' . $app->url, \App\Livewire\Detail::class);
-//        }
-//    }
-//}
+$apps = App::get();
+foreach($apps as $app) {
+    Route::get('/' . $app->url, \App\Livewire\Detail::class);
+}
 
 Route::middleware([
     'auth:sanctum',
