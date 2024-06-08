@@ -18,9 +18,16 @@ use Illuminate\Support\Facades\Schema;
 
 Route::get('/', Landing::class);
 
-$apps = App::get();
-foreach($apps as $app) {
-    Route::get('/' . $app->url, \App\Livewire\Detail::class);
+try {
+    if (Schema::hasTable('apps')) {
+        $apps = App::get();
+        foreach($apps as $app) {
+            Route::get('/' . $app->url, \App\Livewire\Detail::class);
+        }
+    }
+} catch (\Exception $e) {
+    // Handle the exception
+    \Log::error('An error occurred: ' . $e->getMessage());
 }
 
 Route::middleware([
