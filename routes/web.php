@@ -3,6 +3,7 @@
 use App\Livewire\Landing;
 use App\Models\App;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Schema;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Landing::class);
 
-$apps = App::get();
+if (Schema::hasTable('apps')) {
+    $apps = App::get();
 
-foreach($apps as $app) {
-    Route::get('/' . $app->url, \App\Livewire\Detail::class);
+    if($apps) {
+        foreach($apps as $app) {
+            Route::get('/' . $app->url, \App\Livewire\Detail::class);
+        }
+    }
 }
 
 Route::middleware([
