@@ -85,7 +85,7 @@ With the Marriage Preparation App, you can ensure that couples are fully prepare
             'is_active' => 1,
             'font_awesome' => 'user',
             'custom_logo' => 'marriage-logo.svg',
-            'url' => 'music',
+            'url' => 'marriage',
             'public_url' => 'https://marriage.catholicresource.org',
         ]);
 
