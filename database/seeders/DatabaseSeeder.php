@@ -151,7 +151,23 @@ With the Newman Center Database, managing student information has never been eas
             'user_id' => $this->josh->id,
             'name' => 'Document Recipe',
             'description' => 'A tool for creating collections of pdfs that need to be printed out for various circumstances',
-            'content' => '',
+            'content' => '### Document Recipe
+
+The Document Recipe app is a practical tool designed to help users manage and organize multiple PDF documents into a single master document. This app is especially useful for teams who need to handle and distribute numerous paper forms to their clients.
+
+**Key Features:**
+
+1. **Input Multiple PDFs:** Easily upload and input a number of PDF documents into the app. This feature simplifies the process of managing large quantities of documents.
+
+2. **Construct a Master Document:** Combine individual PDFs into a single master document. This master document can contain all the necessary forms and information in one place.
+
+3. **Name and Description:** Give the master document a clear name and description. This helps users understand its intended purpose and contents at a glance.
+
+4. **Information Clarity:** Add additional information to the master document to make its purpose and contents very clear to users. This ensures that everyone knows exactly what the document is for and how to use it.
+
+5. **User-Friendly Interface:** The app is designed to be simple and easy to use, making it accessible for users of all technical skill levels.
+
+With the Document Recipe app, you can streamline the process of managing and distributing important forms. This tool is essential for any team needing to organize and handle multiple documents efficiently, providing clarity and ease in document management.',
             'is_active' => 1,
             'font_awesome' => 'file',
             'custom_logo' => null,
@@ -163,7 +179,23 @@ With the Newman Center Database, managing student information has never been eas
             'user_id' => $this->josh->id,
             'name' => 'IdeaSync',
             'description' => 'Capture your ideas on the Go and share them with your team',
-            'content' => '',
+            'content' => '### IdeaSync
+
+IdeaSync is a simple and efficient app designed for sharing ideas with your team while you\'re on the go. Whether you\'re on a skateboard, in a car, or anywhere else, IdeaSync makes it easy to capture and share your thoughts quickly.
+
+**Key Features:**
+
+1. **Easy Audio Recording:** Start recording your ideas effortlessly with just a tap. This feature is perfect for capturing inspiration no matter where you are.
+
+2. **Idea Buckets:** Drop your audio recordings into a virtual bucket. Each bucket can be shared with your team, making collaboration seamless.
+
+3. **Automatic Transcription:** Once an idea is offloaded into a bucket, it is automatically transcribed. This means you and your team can access both the audio recording and the written text.
+
+4. **Quick and Simple:** IdeaSync is designed to be straightforward and quick to use. It\'s ideal for busy people who need to offload their ideas without any hassle.
+
+    5. **Team Collaboration:** Your team can easily access and review the transcribed ideas and the original audio recordings. This fosters better communication and collaboration within your team.
+
+    With IdeaSync, you can ensure that no great idea is ever lost. This app is perfect for anyone needing to capture and share their thoughts on the go, providing a quick and efficient way to manage and collaborate on new ideas.',
             'is_active' => 1,
             'font_awesome' => null,
             'custom_logo' => 'IdeaSync-Logo.svg',
@@ -175,7 +207,23 @@ With the Newman Center Database, managing student information has never been eas
             'user_id' => $this->josh->id,
             'name' => 'Ongoing Formation',
             'description' => 'Capture your ideas on the Go and share them with your team',
-            'content' => '',
+            'content' => '### Ongoing Formation
+
+Ongoing Formation is an essential app for dioceses to efficiently manage and track important information about their priests. This app helps ensure that everything related to ordination, anniversaries, events, and required studies is organized and communicated effectively.
+
+**Key Features:**
+
+1. **Track Ordinations and Anniversaries:** Easily keep track of the ordination dates and anniversaries of all priests in the diocese. This helps in planning celebrations and acknowledgments.
+
+2. **Event Planning:** Plan and organize events for the presbyterate. Make sure all details are handled, communicated to the speakers, and shared with those who are part of the presbyterate.
+
+3. **Required Studies:** Ensure that all priests are on track with their required studies. This is especially useful for new priests or foreign priests who need to complete specific educational requirements.
+
+4. **Effective Communication:** The app helps in communicating important details to priests and speakers, ensuring that everyone is informed and prepared.
+
+5. **User-Friendly Interface:** Designed to be simple and easy to use, making it accessible for everyone involved, regardless of their technical skills.
+
+With Ongoing Formation, dioceses can manage and support their priests more effectively, ensuring that all important dates, events, and requirements are organized and communicated efficiently. This tool is invaluable for maintaining a well-organized and informed presbyterate.',
             'is_active' => 1,
             'font_awesome' => 'school',
             'custom_logo' => null,
@@ -187,7 +235,23 @@ With the Newman Center Database, managing student information has never been eas
             'user_id' => $this->josh->id,
             'name' => 'Navigator',
             'description' => 'Organize and share your links with your team',
-            'content' => '',
+            'content' => '### Ongoing Formation
+
+Ongoing Formation is an essential app for dioceses to efficiently manage and track important information about their priests. This app helps ensure that everything related to ordination, anniversaries, events, and required studies is organized and communicated effectively.
+
+**Key Features:**
+
+1. **Track Ordinations and Anniversaries:** Easily keep track of the ordination dates and anniversaries of all priests in the diocese. This helps in planning celebrations and acknowledgments.
+
+2. **Event Planning:** Plan and organize events for the presbyterate. Make sure all details are handled, communicated to the speakers, and shared with those who are part of the presbyterate.
+
+3. **Required Studies:** Ensure that all priests are on track with their required studies. This is especially useful for new priests or foreign priests who need to complete specific educational requirements.
+
+4. **Effective Communication:** The app helps in communicating important details to priests and speakers, ensuring that everyone is informed and prepared.
+
+5. **User-Friendly Interface:** Designed to be simple and easy to use, making it accessible for everyone involved, regardless of their technical skills.
+
+With Ongoing Formation, dioceses can manage and support their priests more effectively, ensuring that all important dates, events, and requirements are organized and communicated efficiently. This tool is invaluable for maintaining a well-organized and informed presbyterate.',
             'is_active' => 1,
             'font_awesome' => 'location-arrow',
             'custom_logo' => null,
@@ -199,7 +263,21 @@ With the Newman Center Database, managing student information has never been eas
             'user_id' => $this->josh->id,
             'name' => 'Wedding and Funeral Readings',
             'description' => 'Select readings for the wedding or for the funeral which are coming up.  Click print, punch holes in the side, and then put the papers in your binder and they will be ready to place on the ambo.',
-            'content' => '',
+            'content' => '### Readings App
+
+The Readings App is a simple and efficient tool for selecting readings and readers for weddings and funerals. This app makes it easy to follow the recommendations from the Catholic liturgical ritual documents.
+
+**Key Features:**
+
+1. **Select Readings:** Choose the appropriate readings for weddings and funerals. The app provides the recommended options from the Catholic liturgical ritual documents.
+
+2. **Assign Readers:** Input the names of the readers who will be doing the readings. This ensures everyone knows their role and is prepared.
+
+3. **Print Ready:** Once the readings and readers are selected, simply click "Print." The documents will be ready to put into a binder, making them easy to take to the AMBO.
+
+4. **User-Friendly Interface:** Designed to be straightforward and easy to use, this app ensures that even those with minimal technical skills can manage it effectively.
+
+With the Readings App, you can streamline the process of organizing readings for important ceremonies, ensuring everything is prepared and ready for the service. This tool is an essential addition for pastors, pastoral teams, and anyone involved in planning liturgical events.',
             'is_active' => 1,
             'font_awesome' => 'book',
             'custom_logo' => null,
