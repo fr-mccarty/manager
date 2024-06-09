@@ -7,11 +7,13 @@
             </a>
         </div>
 
-        <div class="pb-[4em]  md:flex items-center md:gap-[10em]">
+        <div class="pb-[4em] xl:flex items-center md:gap-[10em]">
             @if($app->custom_logo)
-                <img alt="Logo" class="w-[7em]" src="{{$app->custom_logo}}" />
+                <div class="bg-white p-3 rounded-xl w-48 h-48 flex items-center justify-center">
+                    <img alt="Logo" class="w-[7em]" src="{{$app->custom_logo}}" />
+                </div>
             @else
-                <i class="fas fa-{{$app->font_awesome}} text-white text-[6em] py-12"></i>
+                    <i class="fas fa-{{$app->font_awesome}} text-white text-[6em] py-12"></i>
             @endif
 
             <div class="text-white ">
