@@ -227,8 +227,8 @@ With Ongoing Formation, dioceses can manage and support their priests more effec
             'is_active' => 1,
             'font_awesome' => 'school',
             'custom_logo' => null,
-            'url' => 'formation',
-            'public_url' => 'https://formation.catholicresource.org',
+            'url' => 'ongoing-formation',
+            'public_url' => 'https://ongoing-formation.catholicresource.org/',
         ]);
 
         App::create([
