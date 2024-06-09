@@ -92,7 +92,7 @@ With the Marriage Preparation App, you can ensure that couples are fully prepare
         App::create([
             'user_id' => $this->josh->id,
             'name' => 'Team Feedback',
-            'description' => 'Track the marriage preparation for all the couples in your parish',
+            'description' => 'Ask for and collect feedback for your preachers quickly',
             'content' => '### Feedback Team App
 
 The Feedback Team App is a web application designed to help individuals assemble a team and gather feedback on their activities. Originally created for homilists to receive feedback on their weekend homilies, this app is versatile and can be used for various activities across an organization.
@@ -206,7 +206,7 @@ IdeaSync is a simple and efficient app designed for sharing ideas with your team
         App::create([
             'user_id' => $this->josh->id,
             'name' => 'Ongoing Formation',
-            'description' => 'Capture your ideas on the Go and share them with your team',
+            'description' => 'Manage Ongoing Formation for the Diocese',
             'content' => '### Ongoing Formation
 
 Ongoing Formation is an essential app for dioceses to efficiently manage and track important information about their priests. This app helps ensure that everything related to ordination, anniversaries, events, and required studies is organized and communicated effectively.
