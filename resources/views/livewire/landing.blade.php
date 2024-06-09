@@ -18,8 +18,6 @@
     </div>
 
     <x-page>
-
-
         @foreach($apps as $index => $app)
             <div class="{{ $index % 2 != 0 ? 'flex-row-reverse' : '' }} gap-[5em] md:flex justify-between px-[4em] py-[4em]  items-center">
                 <div>
