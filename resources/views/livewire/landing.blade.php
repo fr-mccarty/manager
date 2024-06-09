@@ -4,13 +4,13 @@
 
         <div class="text-white ">
             <div class="text-[5em] font-bold">
-                Catholic Resources
+                Catholic Resource
             </div>
             <div class="text-[2em]">
-                Useful Tech for Church people and Small Businesses
+                Useful Tech for Church people and other Entrepreneurs
             </div>
             <div class="mt-10">
-                <x-link.white-button target="_blank" href="http://lolekproductions.org">
+                <x-link.white-button target="_blank" href="https://lolekproductions.org">
                     Lolek Productions
                 </x-link.white-button>
             </div>
