@@ -16,6 +16,8 @@ return [
     'date_for_humans_format' => 'M d, Y',
     'date_for_editing_format' => 'm/d/Y',
 
+    'apps_directory' => '/Users/joshmccarty/Code-2022M1/',
+
     'navigation_menu' => [
         ['label' => 'Dashboard', 'route' => 'dashboard'],
 

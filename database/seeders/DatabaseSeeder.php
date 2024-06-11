@@ -59,7 +59,7 @@ Key Features:
 	5.	Flexible Usage: Perfect for organizing music for church services, community events, or any occasion where a collection of musical pieces is needed.
 
 With the Music Organizer App, you can save time and ensure that your musical events are well-organized and beautifully executed. This tool is an essential addition to your toolkit, providing efficiency and ease in managing your music library.',
-            'is_active' => 0,
+            'is_active' => 1,
             'font_awesome' => 'music',
             'custom_logo' => null,
             'url' => 'music',

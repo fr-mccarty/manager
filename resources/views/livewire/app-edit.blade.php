@@ -6,6 +6,11 @@
         {{$entity->moduleName}}{{$entity->name ? ': ' . $entity->name : ''}}
     </x-heading>
 
+    <div class="flex space-x-5 mt-2">
+        <x-link.edit target="_blank" href="{{$entity->project_path ? 'http://' . $entity->project_path . '.test' :  '#'}}">Local App</x-link.edit>
+        <x-link.edit target="_blank" href="{{$entity->public_url ? $entity->public_url :  '#'}}">Production App</x-link.edit>
+    </div>
+
     <div class="space-x-2 flex justify-end py-4">
         <x-dropdown align="right" width="60">
             <x-slot name="trigger">
@@ -44,15 +49,12 @@
 
         <x-slot name="form">
 
-            <x-input-module property-name="name" label="Name" type="text" />
-
-            <div class="col-span-6 md:col-span-4">
-                <x-label>Description</x-label>
-                <x-input.text wire:model="description" id="description"></x-input.text>
-                @error('description')
-                <x-input.error>{{ $message }}</x-input.error>
-                @enderror
-            </div>
+            <x-input-module property-name="name" label="Name" type="text" required />
+            <x-input-module property-name="description" label="Description" type="textarea" />
+            <x-input-module property-name="content" label="Content" type="textarea" />
+            <x-input-module property-name="url" label="Url" type="text" />
+            <x-input-module property-name="publicUrl" label="Public Url" type="text" />
+            <x-input-module property-name="isActive" label="Is Active" type="checkbox" />
 
         </x-slot>
 
@@ -61,6 +63,36 @@
             <x-link.white-button class="ml-3" href="/{{$entity->moduleUrl}}">Cancel</x-link.white-button>
         </x-slot>
     </x-form-section>
+
+    <x-section-border />
+
+    <x-action-section>
+        <x-slot name="title">
+            Actions
+        </x-slot>
+
+        <x-slot name="description">
+            Do cool stuff with the app here
+        </x-slot>
+
+        <x-slot name="content">
+            @if(env('APP_ENV') === 'local')
+            <div class="space-y-3">
+                <div>
+                    <x-link.black-button wire:click="copyWelcomePage">Copy Welcome Page</x-link.black-button>
+                </div>
+                <div>
+                    <x-link.black-button wire:click="copyPriestCollarComponent">Copy Priest Collar Component</x-link.black-button>
+                </div>
+                <div>
+                    <x-link.black-button wire:click="copyBrandLogos">Copy Brand Logos</x-link.black-button>
+                </div>
+            </div>
+            @else
+                <div>The functions contained herein can only be run on the local device.</div>
+            @endif
+        </x-slot>
+    </x-action-section>
 
     @include('include.delete-entity-modal')
 
