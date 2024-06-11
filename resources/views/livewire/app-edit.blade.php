@@ -56,6 +56,7 @@
             <x-input-module property-name="content" label="Content" type="textarea" />
             <x-input-module property-name="url" label="Url" type="text" />
             <x-input-module property-name="publicUrl" label="Public Url" type="text" />
+            <x-input-module property-name="projectPath" label="Project Path" type="text" />
             <x-input-module property-name="isActive" label="Is Active" type="checkbox" />
 
         </x-slot>
@@ -88,6 +89,9 @@
                 </div>
                 <div>
                     <x-link.black-button wire:click="copyBrandLogos">Copy Brand Logos</x-link.black-button>
+                </div>
+                <div>
+                    <x-link.black-button wire:click="copyDashboard">Copy Dashboard</x-link.black-button>
                 </div>
             </div>
             @else

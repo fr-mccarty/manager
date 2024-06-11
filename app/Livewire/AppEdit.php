@@ -92,10 +92,6 @@ class AppEdit extends Component
 
     public function copyBrandLogos()
     {
-//        /authentication-card-logo.blade.php
-        //application-logo
-        //application-mark
-
         $appsHomeDirectory = config('constants.apps_directory');
 
         $fromPath = base_path() . '/stubs/authentication-card-logo.blade.php';
@@ -111,6 +107,21 @@ class AppEdit extends Component
         copy($fromPath, $toPath);
 
         $this->notify('Done');
+    }
+
+    public function copyDashboard()
+    {
+        $appsHomeDirectory = config('constants.apps_directory');
+
+        $fromPath = base_path() . '/stubs/dashboard.blade.php';
+        $toPath = $appsHomeDirectory .  $this->projectPath . '/resources/views/livewire/dashboard.blade.php';
+        copy($fromPath, $toPath);
+
+        $fromPath = base_path() . '/stubs/Dashboard.php';
+        $toPath = $appsHomeDirectory .  $this->projectPath . '/app/Livewire/Dashboard.php';
+        copy($fromPath, $toPath);
+
+        $this->notify('Done.  Make sure to update the web.php file in the project');
     }
 
     public function deleteEntity()

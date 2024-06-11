@@ -15,7 +15,7 @@
                         <div class="">
                             <h2 class="text-xl font-semibold text-gray-900">
                                 <a href="/documents">
-                                    Documents: {{count($documents)}}
+                                    Documents: {{$documents}}
                                 </a>
                             </h2>
                             <div class="text-gray-500">
@@ -28,7 +28,7 @@
                         <div class="">
                             <h2 class="text-xl font-semibold text-gray-900">
                                 <a href="/pieces">
-                                    Pieces: {{count($pieces)}}
+                                    Pieces: {{$pieces}}
                                 </a>
                             </h2>
                             <div class="text-gray-500">
@@ -41,7 +41,7 @@
                         <div class="">
                             <h2 class="text-xl font-semibold text-gray-900">
                                 <a href="/events">
-                                    Events: {{count($events)}}
+                                    Events: {{$events}}
                                 </a>
                             </h2>
                             <div class="text-gray-500">
