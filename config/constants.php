@@ -20,8 +20,8 @@ return [
 
     'navigation_menu' => [
         ['label' => 'Dashboard', 'route' => 'dashboard'],
-
         ['label' => 'Apps', 'route' => 'apps.index'],
+        ['label' => 'Global Utilities', 'route' => 'global-utilities'],
 
         // Insert Above
     ],

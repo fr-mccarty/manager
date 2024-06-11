@@ -7,6 +7,15 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
+
+        <!-- PNG format favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
+
+        <!-- Apple Touch Icon for iOS devices -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon-180x180.png">
+
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
