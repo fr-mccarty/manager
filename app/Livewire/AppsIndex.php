@@ -62,7 +62,6 @@ class AppsIndex extends Component
     public function getRowsQueryProperty()
     {
         $query = $this->model::query()
-            ->where('team_id', Auth::user()->currentTeam->id)
             ->when(
                 $this->filters['search'], fn($query, $search) => $query
                     ->search($search)

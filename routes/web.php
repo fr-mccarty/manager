@@ -38,4 +38,10 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('apps/create', \App\Livewire\AppEdit::class)->name('apps.create');
+    Route::get('apps/{appId}', \App\Livewire\AppEdit::class)->name('apps.edit');
+    Route::get('apps', \App\Livewire\AppsIndex::class)->name('apps.index');
+
+    // Insert Above
 });
