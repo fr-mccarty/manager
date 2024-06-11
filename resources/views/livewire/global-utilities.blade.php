@@ -2,18 +2,18 @@
 
     <x-action-section>
         <x-slot name="title">
-            Actions
+            Copy to Stubs
         </x-slot>
 
         <x-slot name="description">
-            Do cool stuff with the app here
+            Copy parts of this app to the stub directory to be ready to copy it to other apps.
         </x-slot>
 
         <x-slot name="content">
             @if(env('APP_ENV') === 'local')
                 <div class="space-y-3">
                     <div>
-                        <x-link.black-button wire:click="copyLayoutComponentsToStubs">Copy Layout Components</x-link.black-button>
+                        <x-link.black-button wire:click="copyLayoutComponentsToStubs">Copy Layout Components to Stubs</x-link.black-button>
                     </div>
 {{--                    <div>--}}
 {{--                        <x-link.black-button wire:click="copyPriestCollarComponent">Copy Priest Collar Component</x-link.black-button>--}}

@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\DirectoryHelper;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
@@ -122,6 +123,17 @@ class AppEdit extends Component
         copy($fromPath, $toPath);
 
         $this->notify('Done.  Make sure to update the web.php file in the project');
+    }
+
+    public function copyLayoutComponents()
+    {
+        $appsHomeDirectory = config('constants.apps_directory');
+
+        $sourceDirectory = base_path() . '/stubs/components/layouts';
+        $destinationDirectory = $appsHomeDirectory .  $this->projectPath . '/resources/views/components/layouts/';
+        DirectoryHelper::recurseCopy($sourceDirectory, $destinationDirectory);
+
+        $this->notify('Done');
     }
 
     public function deleteEntity()

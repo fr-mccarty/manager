@@ -93,6 +93,9 @@
                 <div>
                     <x-link.black-button wire:click="copyDashboard">Copy Dashboard</x-link.black-button>
                 </div>
+                <div>
+                    <x-link.black-button wire:click="copyLayoutComponents">Copy Layout Components</x-link.black-button>
+                </div>
             </div>
             @else
                 <div>The functions contained herein can only be run on the local device.</div>
