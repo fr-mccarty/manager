@@ -35,11 +35,14 @@
                         More Information
                     </x-link.black-button>
                 </div>
+                <div class="py-12">
                 @if($app->custom_logo)
                     <img alt="Logo" class="w-[7em]" src="{{$app->custom_logo}}" />
                 @else
-                    <i class="fas fa-{{$app->font_awesome}} text-[6em] py-12"></i>
+                    <i class="fas fa-{{$app->font_awesome}} text-[6em]"></i>
                 @endif
+                </div>
+
             </div>
         @endforeach
     </x-page>

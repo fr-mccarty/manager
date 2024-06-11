@@ -10,13 +10,15 @@
                 </div>
 
                 <div class="pb-[4em] xl:flex items-center md:gap-[10em]">
+                    <div class="py-12">
                     @if($app->custom_logo)
                         <div class="bg-white p-3 rounded-xl w-48 h-48 flex items-center justify-center">
                             <img alt="Logo" class="w-[7em]" src="{{$app->custom_logo}}" />
                         </div>
                     @else
-                            <i class="fas fa-{{$app->font_awesome}} text-white text-[6em] py-12"></i>
+                        <i class="fas fa-{{$app->font_awesome}} text-white text-[6em]"></i>
                     @endif
+                    </div>
 
                     <div class="text-white ">
                         <div class="text-[5em] font-bold">
