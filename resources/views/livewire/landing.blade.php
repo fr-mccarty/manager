@@ -9,7 +9,7 @@
                         Catholic Resource
                     </div>
                     <div class="text-[2em]">
-                        Useful Tech for Church people and other Entrepreneurs
+                        Useful Tech for Church Leaders and other Entrepreneurs
                     </div>
                     <div class="mt-10">
                         <x-link.white-button target="_blank" href="https://lolekproductions.org">
@@ -23,27 +23,29 @@
 
     <x-page>
         @foreach($apps as $index => $app)
-            <div class="{{ $index % 2 != 0 ? 'flex-row-reverse' : '' }} gap-[5em] md:flex justify-between px-[4em] py-[4em] items-center">
-                <div>
-                    <div class="text-[3em] font-semibold">
-                        {{$app->name}}
+            @if($app->is_active)
+                <div class="{{ $index % 2 != 0 ? 'flex-row-reverse' : '' }} gap-[5em] md:flex justify-between px-[4em] py-[4em] items-center">
+                    <div>
+                        <div class="text-[3em] font-semibold">
+                            {{$app->name}}
+                        </div>
+                        <div class="text-xl text-gray-600">
+                            {{$app->description}}
+                        </div>
+                        <x-link.black-button class="mt-7" href="{{$app->url}}">
+                            More Information
+                        </x-link.black-button>
                     </div>
-                    <div class="text-xl text-gray-600">
-                        {{$app->description}}
+                    <div class="py-12">
+                    @if($app->custom_logo)
+                        <img alt="Logo" class="w-[7em]" src="{{$app->custom_logo}}" />
+                    @else
+                        <i class="fas fa-{{$app->font_awesome}} text-[6em]"></i>
+                    @endif
                     </div>
-                    <x-link.black-button class="mt-7" href="{{$app->url}}">
-                        More Information
-                    </x-link.black-button>
-                </div>
-                <div class="py-12">
-                @if($app->custom_logo)
-                    <img alt="Logo" class="w-[7em]" src="{{$app->custom_logo}}" />
-                @else
-                    <i class="fas fa-{{$app->font_awesome}} text-[6em]"></i>
-                @endif
-                </div>
 
-            </div>
+                </div>
+            @endif
         @endforeach
     </x-page>
 

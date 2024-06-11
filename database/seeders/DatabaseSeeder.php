@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\App;
-use App\Models\Team;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -60,10 +59,11 @@ Key Features:
 	5.	Flexible Usage: Perfect for organizing music for church services, community events, or any occasion where a collection of musical pieces is needed.
 
 With the Music Organizer App, you can save time and ensure that your musical events are well-organized and beautifully executed. This tool is an essential addition to your toolkit, providing efficiency and ease in managing your music library.',
-            'is_active' => 1,
+            'is_active' => 0,
             'font_awesome' => 'music',
             'custom_logo' => null,
             'url' => 'music',
+            'project_path' => 'music',
             'public_url' => 'https://music.catholicresource.org',
         ]);
 
@@ -86,6 +86,7 @@ With the Marriage Preparation App, you can ensure that couples are fully prepare
             'font_awesome' => 'user',
             'custom_logo' => 'marriage-logo.svg',
             'url' => 'marriage',
+            'project_path' => 'marriage',
             'public_url' => 'https://marriage.catholicresource.org',
         ]);
 
@@ -116,6 +117,7 @@ With the Feedback Team App, you can ensure that you receive detailed and organiz
             'font_awesome' => 'bullhorn',
             'custom_logo' => null,
             'url' => 'feedback',
+            'project_path' => 'feedback',
             'public_url' => 'https://feedback.catholicresource.org',
         ]);
 
@@ -144,6 +146,7 @@ With the Newman Center Database, managing student information has never been eas
             'font_awesome' => 'graduation-cap',
             'custom_logo' => null,
             'url' => 'newman',
+            'project_path' => 'newman',
             'public_url' => 'https://newman.catholicresource.org',
         ]);
 
@@ -172,6 +175,7 @@ With the Document Recipe app, you can streamline the process of managing and dis
             'font_awesome' => 'file',
             'custom_logo' => null,
             'url' => 'document',
+            'project_path' => 'document-recipe',
             'public_url' => 'https://document.catholicresource.org',
         ]);
 
@@ -200,6 +204,7 @@ IdeaSync is a simple and efficient app designed for sharing ideas with your team
             'font_awesome' => null,
             'custom_logo' => 'IdeaSync-Logo.svg',
             'url' => 'ideasync',
+            'project_path' => 'idea-sync-BE',
             'public_url' => 'https://ideasync.io',
         ]);
 
@@ -228,6 +233,7 @@ With Ongoing Formation, dioceses can manage and support their priests more effec
             'font_awesome' => 'school',
             'custom_logo' => null,
             'url' => 'ongoing-formation',
+            'project_path' => 'ongoing-formation',
             'public_url' => 'https://ongoing-formation.catholicresource.org/',
         ]);
 
@@ -235,27 +241,23 @@ With Ongoing Formation, dioceses can manage and support their priests more effec
             'user_id' => $this->josh->id,
             'name' => 'Navigator',
             'description' => 'Organize and share your links with your team',
-            'content' => '### Ongoing Formation
+            'content' => 'Navigator
 
-Ongoing Formation is an essential app for dioceses to efficiently manage and track important information about their priests. This app helps ensure that everything related to ordination, anniversaries, events, and required studies is organized and communicated effectively.
+Navigator is a web application designed to help teams easily organize and share links. In today’s world, where many services and documents are shared across multiple platforms and with multiple people, it can be challenging to keep track of everything. Navigator simplifies this process.
 
-**Key Features:**
+Key Features:
 
-1. **Track Ordinations and Anniversaries:** Easily keep track of the ordination dates and anniversaries of all priests in the diocese. This helps in planning celebrations and acknowledgments.
+	1.	Organize Links: Easily organize all your important links in one place. This helps you and your team keep track of valuable resources without getting lost.
+	2.	Share with Your Team: Share organized links with your team effortlessly. This ensures everyone has access to the same information and resources.
+	3.	Centralized Information: Keep all your shared services and documents centralized, making it easy to find and use them whenever needed.
+	4.	User-Friendly Interface: The app is designed to be simple and easy to use, making it accessible for everyone, regardless of their technical skills.
 
-2. **Event Planning:** Plan and organize events for the presbyterate. Make sure all details are handled, communicated to the speakers, and shared with those who are part of the presbyterate.
-
-3. **Required Studies:** Ensure that all priests are on track with their required studies. This is especially useful for new priests or foreign priests who need to complete specific educational requirements.
-
-4. **Effective Communication:** The app helps in communicating important details to priests and speakers, ensuring that everyone is informed and prepared.
-
-5. **User-Friendly Interface:** Designed to be simple and easy to use, making it accessible for everyone involved, regardless of their technical skills.
-
-With Ongoing Formation, dioceses can manage and support their priests more effectively, ensuring that all important dates, events, and requirements are organized and communicated efficiently. This tool is invaluable for maintaining a well-organized and informed presbyterate.',
+With Navigator, you can ensure that all your important links are organized and easily accessible. This tool is perfect for teams looking to manage and share their resources efficiently, providing clarity and ease in navigating shared information.',
             'is_active' => 1,
             'font_awesome' => 'location-arrow',
             'custom_logo' => null,
             'url' => 'navigator',
+            'project_path' => 'navigator',
             'public_url' => 'https://navigator.catholicresource.org',
         ]);
 
@@ -282,6 +284,7 @@ With the Readings App, you can streamline the process of organizing readings for
             'font_awesome' => 'book',
             'custom_logo' => null,
             'url' => 'readings',
+            'project_path' => 'readings',
             'public_url' => 'https://readings.catholicresource.org',
         ]);
 

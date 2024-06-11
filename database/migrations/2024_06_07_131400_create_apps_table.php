@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('font_awesome')->nullable();
             $table->string('custom_logo')->nullable();
             $table->string('url')->nullable();
+            $table->string('project_path')->nullable();
             $table->string('public_url')->nullable();
             $table->timestamps();
         });
