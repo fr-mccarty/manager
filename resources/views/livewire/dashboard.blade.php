@@ -15,11 +15,11 @@
                         <div class="">
                             <h2 class="text-xl font-semibold text-gray-900">
                                 <a href="/apps">
-                                    Apps: {{count($apps)}}
+                                    Apps: {{count($activeApps)}}
                                 </a>
                             </h2>
                             <div class="text-gray-500">
-                                Number of Apps
+                                Number of Active Apps
                             </div>
                         </div>
                     </div>
