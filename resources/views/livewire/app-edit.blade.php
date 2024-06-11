@@ -7,7 +7,9 @@
     </x-heading>
 
     <div class="flex space-x-5 mt-2">
+        @if(env('APP_ENV') === 'local')
         <x-link.edit target="_blank" href="{{$entity->project_path ? 'http://' . $entity->project_path . '.test' :  '#'}}">Local App</x-link.edit>
+        @endif
         <x-link.edit target="_blank" href="{{$entity->public_url ? $entity->public_url :  '#'}}">Production App</x-link.edit>
     </div>
 
