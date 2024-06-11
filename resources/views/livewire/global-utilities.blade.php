@@ -13,7 +13,7 @@
             @if(env('APP_ENV') === 'local')
                 <div class="space-y-3">
                     <div>
-                        <x-link.black-button wire:click="copyLayoutComponents">Copy Layout Components</x-link.black-button>
+                        <x-link.black-button wire:click="copyLayoutComponentsToStubs">Copy Layout Components</x-link.black-button>
                     </div>
 {{--                    <div>--}}
 {{--                        <x-link.black-button wire:click="copyPriestCollarComponent">Copy Priest Collar Component</x-link.black-button>--}}

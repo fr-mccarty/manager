@@ -7,22 +7,22 @@ use Livewire\Component;
 class GlobalUtilities extends Component
 {
 
-    public function copyLayoutComponents()
+    public function copyLayoutComponentsToStubs()
     {
-        $fromPath = base_path() . '/resources/views/components/layouts/livewire/app.blade.php';
-        $toPath = base_path() . '/stubs/components/layouts/livewire/app.blade.php';
+        $fromPath = base_path() . '/resources/views/components/layouts/app.blade.php';
+        $toPath = base_path() . '/stubs/components/layouts/app.blade.php';
         copy($fromPath, $toPath);
 
-        $fromPath = base_path() . '/resources/views/components/layouts/livewire/guest.blade.php';
-        $toPath = base_path() . '/stubs/components/layouts/livewire/guest.blade.php';
+        $fromPath = base_path() . '/resources/views/components/layouts/guest.blade.php';
+        $toPath = base_path() . '/stubs/components/layouts/guest.blade.php';
         copy($fromPath, $toPath);
 
-        $fromPath = base_path() . '/resources/views/components/layouts/livewire/guest-plus.blade.php';
-        $toPath = base_path() . '/stubs/components/layouts/livewire/guest-plus.blade.php';
+        $fromPath = base_path() . '/resources/views/components/layouts/guest-plus.blade.php';
+        $toPath = base_path() . '/stubs/components/layouts/guest-plus.blade.php';
         copy($fromPath, $toPath);
 
-        $fromPath = base_path() . '/resources/views/components/layouts/livewire/print.blade.php';
-        $toPath = base_path() . '/stubs/components/layouts/livewire/print.blade.php';
+        $fromPath = base_path() . '/resources/views/components/layouts/print.blade.php';
+        $toPath = base_path() . '/stubs/components/layouts/print.blade.php';
         copy($fromPath, $toPath);
 
         $this->notify('Done');
