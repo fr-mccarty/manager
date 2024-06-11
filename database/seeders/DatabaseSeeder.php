@@ -93,7 +93,7 @@ With the Marriage Preparation App, you can ensure that couples are fully prepare
         App::create([
             'user_id' => $this->josh->id,
             'name' => 'Team Feedback',
-            'description' => 'Ask for and collect feedback for your preachers quickly',
+            'description' => 'Ask for and collect feedback for your preachers or team members quickly',
             'content' => '### Feedback Team App
 
 The Feedback Team App is a web application designed to help individuals assemble a team and gather feedback on their activities. Originally created for homilists to receive feedback on their weekend homilies, this app is versatile and can be used for various activities across an organization.
