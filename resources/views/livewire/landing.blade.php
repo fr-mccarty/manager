@@ -24,7 +24,7 @@
     <x-page>
         @foreach($apps as $index => $app)
             @if($app->is_active)
-                <div class="{{ $index % 2 != 0 ? 'flex-row-reverse' : '' }} gap-[5em] md:flex justify-between px-[4em] py-[4em] items-center">
+                <div id="{{$app->url}}" class="{{ $index % 2 != 0 ? 'flex-row-reverse' : '' }} gap-[5em] md:flex justify-between px-[4em] py-[4em] items-center">
                     <div>
                         <div class="text-[3em] font-semibold">
                             {{$app->name}}

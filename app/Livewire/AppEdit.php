@@ -107,7 +107,7 @@ class AppEdit extends Component
         $toPath = $appsHomeDirectory .  $this->projectPath . '/resources/views/components/application-mark.blade.php';
         copy($fromPath, $toPath);
 
-        $this->notify('Done');
+        $this->notify('Done.  Remember to run ---npm run build---');
     }
 
     public function copyDashboard()
