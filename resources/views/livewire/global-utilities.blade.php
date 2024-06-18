@@ -15,9 +15,9 @@
                     <div>
                         <x-link.black-button wire:click="copyLayoutComponentsToStubs">Copy Layout Components to Stubs</x-link.black-button>
                     </div>
-{{--                    <div>--}}
-{{--                        <x-link.black-button wire:click="copyPriestCollarComponent">Copy Priest Collar Component</x-link.black-button>--}}
-{{--                    </div>--}}
+                    <div>
+                        <x-link.black-button wire:click="executeBash">Execute Bash</x-link.black-button>
+                    </div>
 {{--                    <div>--}}
 {{--                        <x-link.black-button wire:click="copyBrandLogos">Copy Brand Logos</x-link.black-button>--}}
 {{--                    </div>--}}

@@ -26,6 +26,13 @@ class GlobalUtilities extends Component
         //Dashboard
     }
 
+    public function executeBash()
+    {
+//        $output = shell_exec('cd /Users/joshmccarty/Code-2022M1 && laravel new mood');
+        $output = shell_exec('cd /Users/joshmccarty/Code-2022M1 && php artisan');
+        dd($output);
+    }
+
     public function render()
     {
         return view('livewire.global-utilities');

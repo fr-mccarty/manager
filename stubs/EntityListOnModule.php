@@ -4,9 +4,12 @@ namespace App\Livewire;
 
 use App\Models\%childrenNameSingular%;
 use Livewire\Component;
+use App\Livewire\DataTable\WithPerPagePagination;
 
 class %childrenNamePlural%On%onModule% extends Component
 {
+    use WithPerPagePagination;
+
     public $moduleName = '%childrenNameSingular%';
     public $moduleNamePlural = '%childrenNamePlural%';
 
