@@ -15,7 +15,7 @@
                         <div class="">
                             <h2 class="text-xl font-semibold text-gray-900">
                                 <a href="/apps">
-                                    Apps: {{count($activeApps)}}
+                                    Apps: {{count(config('constants.apps'))}}
                                 </a>
                             </h2>
                             <div class="text-gray-500">

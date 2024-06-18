@@ -23,24 +23,24 @@
 
     <x-page>
         @foreach($apps as $index => $app)
-            @if($app->is_active)
-                <div id="{{$app->url}}" class="{{ $index % 2 != 0 ? 'flex-row-reverse' : '' }} gap-[5em] md:flex justify-between px-[4em] py-[4em] items-center">
+            @if($app['is_active'])
+                <div id="{{$app['url']}}" class="{{ $index % 2 != 0 ? 'flex-row-reverse' : '' }} gap-[5em] md:flex justify-between px-[4em] py-[4em] items-center">
                     <div>
                         <div class="text-[3em] font-semibold">
-                            {{$app->name}}
+                            {{$app['name']}}
                         </div>
                         <div class="text-xl text-gray-600">
-                            {{$app->description}}
+                            {{$app['description']}}
                         </div>
-                        <x-link.black-button class="mt-7" href="{{$app->url}}">
+                        <x-link.black-button class="mt-7" href="{{$app['url']}}">
                             More Information
                         </x-link.black-button>
                     </div>
                     <div class="py-12">
-                    @if($app->custom_logo)
-                        <img alt="Logo" class="w-[7em]" src="{{$app->custom_logo}}" />
+                    @if($app['custom_logo'])
+                        <img alt="Logo" class="w-[7em]" src="{{$app['custom_logo']}}" />
                     @else
-                        <i class="fas fa-{{$app->font_awesome}} text-[6em]"></i>
+                        <i class="fas fa-{{$app['font_awesome']}} text-[6em]"></i>
                     @endif
                     </div>
 

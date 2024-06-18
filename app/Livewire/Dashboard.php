@@ -7,12 +7,6 @@ use Livewire\Component;
 
 class Dashboard extends Component
 {
-    public $activeApps;
-
-    public function mount()
-    {
-        $this->activeApps = App::where('is_active', 1)->get();
-    }
 
     public function render()
     {

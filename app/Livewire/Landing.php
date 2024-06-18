@@ -11,7 +11,7 @@ class Landing extends Component
 
     public function mount()
     {
-        $this->apps = App::get();
+        $this->apps = config('constants.apps');
     }
 
     public function render()

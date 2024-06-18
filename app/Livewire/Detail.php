@@ -13,7 +13,7 @@ class Detail extends Component
     public function mount()
     {
         $segment =  request()->segment(1);
-        $this->app = App::where('url', $segment)->firstOrFail();
+        $this->app = collect(config('constants.apps'))->where('url', $segment)->firstOrFail();
     }
 
     public function render()
