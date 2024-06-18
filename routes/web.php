@@ -37,11 +37,7 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', \App\Livewire\Dashboard::class)->name('dashboard');
 
-    Route::get('/global-utilities', \App\Livewire\GlobalUtilities::class)->name('global-utilities');
 
-    Route::get('apps/create', \App\Livewire\AppEdit::class)->name('apps.create');
-    Route::get('apps/{appId}', \App\Livewire\AppEdit::class)->name('apps.edit');
-    Route::get('apps', \App\Livewire\AppsIndex::class)->name('apps.index');
 
     // Insert Above
 });
