@@ -43,7 +43,6 @@
                         <i class="fas fa-{{$app['font_awesome']}} text-[6em]"></i>
                     @endif
                     </div>
-
                 </div>
             @endif
         @endforeach
