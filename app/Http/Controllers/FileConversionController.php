@@ -19,10 +19,12 @@ class FileConversionController extends Controller
         // Handle uploaded file
         $movFile = $request->file('file');
         $mediaFolder = 'public/media'; // Target folder for media files
-        $clearFileName = pathinfo($movFile->getClientOriginalName(), PATHINFO_FILENAME);
+        $fileName = pathinfo($movFile->getClientOriginalName(), PATHINFO_FILENAME);
+
+        $sanitizedFileName = preg_replace('/[^A-Za-z0-9_-]/', '_', $fileName);
 
         // Save the original file in the media folder with a clear name
-        $originalFileName = $clearFileName . '.mov';
+        $originalFileName = $sanitizedFileName . '.mov';
         $originalFilePath = $movFile->storeAs($mediaFolder, $originalFileName);
         $originalFileUrl = Storage::url('media/' . $originalFileName);
 
@@ -33,7 +35,7 @@ class FileConversionController extends Controller
         }
 
         // Define the path for the converted MP3 file
-        $convertedFileName = $clearFileName . '.mp3';
+        $convertedFileName = $sanitizedFileName . '.mp3';
         $convertedFilePath = $mediaStoragePath . '/' . $convertedFileName;
 
         // Convert the original .mov file to .mp3 using FFmpeg
@@ -51,8 +53,8 @@ class FileConversionController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'File uploaded and converted successfully.',
-            'original_file_url' => url($originalFileUrl),
-            'converted_file_url' => url($convertedFileUrl),
+            'mov_file_url' => url($originalFileUrl),
+            'mp3_file_url' => url($convertedFileUrl),
         ]);
     }
 }
