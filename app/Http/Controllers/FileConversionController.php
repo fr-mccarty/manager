@@ -11,10 +11,10 @@ class FileConversionController extends Controller
 {
     public function convertMovToMp3(Request $request)
     {
-        return response()->json([
-            'success' => true,
-            'message' => 'Hello!',
-        ]);
+//        return response()->json([
+//            'success' => true,
+//            'message' => 'Hello!',
+//        ]);
 
 
         Log::info('converting');
