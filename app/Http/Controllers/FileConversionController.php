@@ -49,8 +49,8 @@ class FileConversionController extends Controller
         return response()->json([
             'success' => true,
             'message' => 'File converted successfully.',
-            'download_url' => url('storage/converted/' . basename($outputFilePath)),
             'output_path' => $outputFilePath,
+            'download_url' => url('storage/converted/' . basename($outputFilePath)),
         ]);
     }
 }
