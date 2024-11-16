@@ -5,11 +5,14 @@ namespace App\Http\Controllers;
 use FFMpeg\FFMpeg;
 use FFMpeg\Format\Audio\Mp3;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class FileConversionController extends Controller
 {
     public function convertMovToMp3(Request $request)
     {
+        Log::info('converting');
+
         // Validate the uploaded file
         $request->validate([
             'file' => 'required|mimetypes:video/quicktime|max:500240', // .mov file
