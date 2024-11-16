@@ -50,6 +50,7 @@ class FileConversionController extends Controller
             'success' => true,
             'message' => 'File converted successfully.',
             'download_url' => url('storage/converted/' . basename($outputFilePath)),
+            'output_path' => $outputFilePath,
         ]);
     }
 }
