@@ -12,7 +12,7 @@ class FileConversionController extends Controller
     {
         // Validate the uploaded file
         $request->validate([
-            'file' => 'required|mimetypes:video/quicktime|max:50240', // .mov file
+            'file' => 'required|mimetypes:video/quicktime|max:500240', // .mov file
         ]);
 
         $movFile = $request->file('file');
