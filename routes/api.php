@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('auth:sanctum')->post('/convert-mov-to-mp3', [FileConversionController::class, 'convertMovToMp3']);
+Route::middleware('auth:sanctum')->post('/handle-mov', [FileConversionController::class, 'handleMov']);
