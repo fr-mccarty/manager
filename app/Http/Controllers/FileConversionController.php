@@ -10,6 +10,12 @@ class FileConversionController extends Controller
 {
     public function convertMovToMp3(Request $request)
     {
+        return response()->json([
+            'success' => true,
+            'message' => 'Hello',
+        ]);
+
+
         // Validate the uploaded file
         $request->validate([
             'file' => 'required|mimetypes:video/quicktime|max:50240', // .mov file
