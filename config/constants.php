@@ -121,33 +121,33 @@ return [
 //            'project_path' => 'newman',
 //            'public_url' => 'https://newman.catholicresource.org',
 //        ],
-//        [
-//            'name' => 'Document Recipe',
-//            'description' => 'A tool for creating collections of pdfs that need to be printed out for various circumstances',
-//            'content' => '### Document Recipe
-//
-//The Document Recipe app is a practical tool designed to help users manage and organize multiple PDF documents into a single master document. This app is especially useful for teams who need to handle and distribute numerous paper forms to their clients.
-//
-//**Key Features:**
-//
-//1. **Input Multiple PDFs:** Easily upload and input a number of PDF documents into the app. This feature simplifies the process of managing large quantities of documents.
-//
-//2. **Construct a Master Document:** Combine individual PDFs into a single master document. This master document can contain all the necessary forms and information in one place.
-//
-//3. **Name and Description:** Give the master document a clear name and description. This helps users understand its intended purpose and contents at a glance.
-//
-//4. **Information Clarity:** Add additional information to the master document to make its purpose and contents very clear to users. This ensures that everyone knows exactly what the document is for and how to use it.
-//
-//5. **User-Friendly Interface:** The app is designed to be simple and easy to use, making it accessible for users of all technical skill levels.
-//
-//With the Document Recipe app, you can streamline the process of managing and distributing important forms. This tool is essential for any team needing to organize and handle multiple documents efficiently, providing clarity and ease in document management.',
-//            'is_active' => 1,
-//            'font_awesome' => 'file',
-//            'custom_logo' => null,
-//            'url' => 'document',
-//            'project_path' => 'document-recipe',
-//            'public_url' => 'https://document.catholicresource.org',
-//        ],
+        [
+            'name' => 'Document Recipe',
+            'description' => 'A tool for creating collections of pdfs that need to be printed out for various circumstances',
+            'content' => '### Document Recipe
+
+The Document Recipe app is a practical tool designed to help users manage and organize multiple PDF documents into a single master document. This app is especially useful for teams who need to handle and distribute numerous paper forms to their clients.
+
+**Key Features:**
+
+1. **Input Multiple PDFs:** Easily upload and input a number of PDF documents into the app. This feature simplifies the process of managing large quantities of documents.
+
+2. **Construct a Master Document:** Combine individual PDFs into a single master document. This master document can contain all the necessary forms and information in one place.
+
+3. **Name and Description:** Give the master document a clear name and description. This helps users understand its intended purpose and contents at a glance.
+
+4. **Information Clarity:** Add additional information to the master document to make its purpose and contents very clear to users. This ensures that everyone knows exactly what the document is for and how to use it.
+
+5. **User-Friendly Interface:** The app is designed to be simple and easy to use, making it accessible for users of all technical skill levels.
+
+With the Document Recipe app, you can streamline the process of managing and distributing important forms. This tool is essential for any team needing to organize and handle multiple documents efficiently, providing clarity and ease in document management.',
+            'is_active' => 1,
+            'font_awesome' => 'file',
+            'custom_logo' => null,
+            'url' => 'document',
+            'project_path' => 'document-recipe',
+            'public_url' => 'https://document.catholicresource.org',
+        ],
         [
             'name' => 'IdeaSync',
             'description' => 'Capture your ideas on the Go and share them with your team',
